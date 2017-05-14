@@ -1,0 +1,285 @@
+/*-------------------
+Style Sheet for {Group 2 Code Fair}
+
+author: Group 2
+website: {Code Fair}
+Group 2: Dyllan, Joel, Rasmus
+---------------------*/
+
+@import 'vendor/normalize.css';
+@import 'vendor/browserupgrade.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'lib/nav.css';
+
+/* Site Settings*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+
+/* Font Settings */
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+small,
+.font_small {
+  font-size: 0.707em;
+}
+
+
+/* Header */
+
+header {
+  float: left;
+  width: 100%;
+  background-color: lightgray;
+}
+
+#logoContainer {}
+
+#logo {
+  padding: 10px;
+  width: 50%;
+  max-width: 500px;
+  min-height: 50px;
+}
+
+
+/* Slideshow */
+
+.slideshow_Container {
+  float: left;
+  width: 100%;
+  max-height: 450px;
+  background-color: lightgray;
+  padding: 20px;
+  clear: none;
+  background-image: url("/images/bannerPicture.jpg");
+  background-size: contain;
+}
+
+#countdown {
+  font-weight: bolder;
+  font-size: 2.618em;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 180px;
+  text-shadow: -webkit-font-smoothing: antialiased #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px;
+}
+
+
+/* Main */
+
+.mainContainer {
+  width: 100%;
+  min-height: 1200px;
+  background-color: #fefefe;
+}
+
+.welcomingNotes_Container {
+  float: left;
+  max-width: none;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  clear: none;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Aside */
+
+aside {
+  float: right;
+  /*width: 480px;*/
+  width: 100%;
+}
+
+.recentNews_Container {
+  float: right;
+  width: 100%;
+  clear: none;
+  max-width: none;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.recentNews_Container article {
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.schedule_Container {
+  max-width: none;
+  float: right;
+  width: 100%;
+  clear: none;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.schedule_Container div {
+  padding: 5px;
+  margin-top: 15px;
+}
+
+
+/* Footer */
+
+footer {
+  float: left;
+  width: 100%;
+  height: auto;
+  clear: both;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+
+/*Media Query*/
+
+@media screen and (min-width: 700px) {
+  .welcomingNotes_Container {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .recentNews_Container {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 400px;
+  }
+  .schedule_Container {
+    float: right;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 400px;
+  }
+  aside {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    float: none;
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .mainContainer {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainContainer {
+    width: 100%;
+    margin: auto;
+  }
+  * {
+    font-size: 16px;
+  }
+  body {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main {
+    width: 70%;
+  }
+  aside {
+    float: right;
+    width: 30%;
+    max-width: none;
+    margin: 0;
+    clear: none;
+  }
+  .welcomingNotes_Container {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  .recentNews_Container {
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    max-width: none;
+  }
+  .schedule_Container {
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .mainContainer {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+/*Needs another Media Query, Some weird Scaling issues going on at small screen widths*/
+
+.nav @import 'lib/nav.css';
