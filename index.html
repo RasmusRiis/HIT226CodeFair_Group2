@@ -21,22 +21,22 @@ Group 2: Dyllan, Joel, Rasmus
   <header>
     <div class="header__container">
       <div #logoContainer>
-        <img id="logo" src="/images/codeFairLogoTransparent.png" alt="CodeFairLogo">
+        <img id="logo" src="images/codeFairLogoTransparent.png" alt="CodeFairLogo">
       </div>
 
       <nav>
         <ul>
           <li>
-            <a>Home</a>
+            <a class="active" href="index.html">Home</a>
           </li>
           <li>
-            <a>Event Details</a>
+            <a href="eventDetails.html">Event Details</a>
           </li>
           <li>
-            <a href="forStudents.html">Students</a>
+            <a href="students.html">Students</a>
           </li>
           <li>
-            <a>Industry</a>
+            <a href="industry.html">Industry</a>
           </li>
         </ul>
       </nav>
@@ -47,16 +47,15 @@ Group 2: Dyllan, Joel, Rasmus
   <div class="slideshow_Container ">
     <p id="countdown"></p>
   </div>
-  <div class="mainContainer">
+  <div>
     <main>
       <!--*
 ~~Main~~
 Here goes The Main welcoming notes and other content that would be in the main-
 *-->
-      <div class="welcomingNotes_Container ">
-        <h1>Welcoming Information</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut mauris non lacus ultrices dapibus ut eu massa. Vestibulum sed elit orci. Fusce lacus odio, molestie a sollicitudin quis, imperdiet et neque. Etiam id lobortis risus, rhoncus ullamcorper turpis. Aenean vel lorem quis eros pulvinar congue. Proin accumsan varius libero consequat auctor. Sed ac bibendum arcu. Pellentesque ullamcorper purus ac sapien egestas, at ultrices ante varius. Nunc tempus viverra diam, sed sagittis urna imperdiet at.</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut mauris non lacus ultrices dapibus ut eu massa. Vestibulum sed elit orci. Fusce lacus odio, molestie a sollicitudin quis, imperdiet et neque. Etiam id lobortis risus, rhoncus ullamcorper turpis. Aenean vel lorem quis eros pulvinar congue. Proin accumsan varius libero consequat auctor. Sed ac bibendum arcu. Pellentesque ullamcorper purus ac sapien egestas, at ultrices ante varius. Nunc tempus viverra diam, sed sagittis urna imperdiet at.</p>
+      <div class="largeLeft_Container">
+        <h1>Code Fair</h1>
+        <p>The code fair is an event that has been held at Charles Darwin University. It is designed to build </p>
       </div>
     </main>
 
@@ -65,35 +64,57 @@ Here goes The Main welcoming notes and other content that would be in the main-
 ~~Aside~~
 Here goes Recent News and maybe a Short Schedule with a link to the main one
 *-->
-      <div class="recentNews_Container">
-        <h3>Recent News</h3>
-        <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit rhoncus sapien, ac consectetur orci malesuada ac. Ut arcu dui, blandit ut cursus quis, interdum.</p>
-        </article>
-        <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit rhoncus sapien, ac consectetur orci malesuada ac. Ut arcu dui, blandit ut cursus quis, interdum.</p>
-        </article>
-        <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit rhoncus sapien, ac consectetur orci malesuada ac. Ut arcu dui, blandit ut cursus quis, interdum.</p>
-        </article>
+      <div class="smallRight_Container">
+
+        <div class="socialMedia_Container">
+          <h3>Social Media</h3>
+          <img id="facebook" src="images/facebook.png" alt="facebook_link">
+          <img id="twitter" src="images/twitter.png" alt="twitter_link">
+          <img id="CDU" src="images/cdu.png" alt="CDU_Link">
+        </div>
       </div>
-      <div class="schedule_Container">
-        <h3>TimeTable</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit rhoncus sapien, ac consectetur orci malesuada ac. Ut arcu dui, blandit ut cursus quis, interdum.</p>
+      <div class="smallRight_Container">
+        <div class="timetable">
+          <h3>TimeTable</h3>
+          <p>Date: 11 November 2017</p>
+          <table>
+            <tr>
+              <th>Event Name</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+            </tr>
+            <tr>
+              <td>Coding Competition</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>Poster Competition</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>Business Innovation Challenge</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </aside>
   </div>
-  <footer>
-    <h4>Footer</h4>
-    <div class="left__float">
-      <p>Contact Name:...</p>
-      <p>Contact Email:...</p>
-      <p>Contact Phone Number:...</p>
+  <footer id="footer">
+    <h3>Footer</h3>
+    <div class="left_float">
+      <p><b>Contact Name:</b> Shahin Joudi</p>
+      <p><b>Contact Email:</b> shahin.joudi@cdu.edu.au</p>
+      <p><b>Contact T:</b> 0466 505 107</p>
     </div>
-
-    <div class="right__float">
-      <p>Student Signup Link</p>
-      <p>Industry Signup Link</p>
+    <div class="right_float">
+      <a href="students.html#studentsLink">Students Signup</a>
+      <br>
+      <br>
+      <a href="industry.html#industryLink">Industry Signup</a>
     </div>
   </footer>
   <script type="text/javascript " src="js/main.js "></script>

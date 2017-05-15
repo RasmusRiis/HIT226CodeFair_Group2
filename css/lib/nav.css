@@ -1,0 +1,57 @@
+header nav {
+  float: left;
+  width: 100%;
+  background-color: #cc0000;
+  color: #fefefe;
+}
+
+header nav ul {
+  display: block;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+header nav li {
+  display: block;
+  float: left;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+header nav li a {
+  width: 140px;
+  font-size: 1.2em;
+  padding: 10px;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  width: 170px;
+  padding: 10px;
+  text-decoration: underline;
+}
+header nav li .active{
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 950px) {
+  header nav li {
+    width: auto;
+    padding: 20px;
+  }
+  header nav li a {
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  header nav ul {
+    margin-left: 50px;
+  }
+  header nav li a {
+    font-size: 1.414em;
+  }
+}

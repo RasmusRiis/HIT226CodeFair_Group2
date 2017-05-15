@@ -1,0 +1,13 @@
+.signUpBtn{
+  background-color: gray;
+  width: 50%;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+.signUpBtn p{
+  margin: 0;
+}
+p:first-child{
+  font-size: large;
+}

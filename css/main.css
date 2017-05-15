@@ -88,7 +88,7 @@ header {
   background-color: lightgray;
   padding: 20px;
   clear: none;
-  background-image: url("/images/bannerPicture.jpg");
+  background-image: url("images/bannerPicture2.jpg");
   background-size: contain;
 }
 
@@ -110,7 +110,7 @@ header {
   background-color: #fefefe;
 }
 
-.welcomingNotes_Container {
+.largeLeft_Container {
   float: left;
   max-width: none;
   width: 100%;
@@ -131,9 +131,12 @@ aside {
   float: right;
   /*width: 480px;*/
   width: 100%;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: lightgray;
 }
 
-.recentNews_Container {
+.smallRight_Container {
   float: right;
   width: 100%;
   clear: none;
@@ -144,12 +147,31 @@ aside {
   padding-right: 10px;
 }
 
-.recentNews_Container article {
+.timetable {
+  margin: auto;
+  max-width: 350px;
+}
+
+.smallRight_Container article {
   padding: 5px;
   margin-top: 15px;
 }
 
-.schedule_Container {
+.socialMedia_Container {
+  max-width: 350px;
+  margin: auto;
+}
+
+.socialMedia_Container img {
+  max-width: 130px;
+}
+
+#CDU {
+  max-width: 260px;
+}
+
+
+/*.schedule_Container {
   max-width: none;
   float: right;
   width: 100%;
@@ -164,6 +186,7 @@ aside {
   padding: 5px;
   margin-top: 15px;
 }
+*/
 
 
 /* Footer */
@@ -177,23 +200,70 @@ footer {
   padding: 10px;
 }
 
+#footer h3 {
+  margin: .5em 0 0em;
+  font-weight: inherit;
+  line-height: 1;
+}
+
+footer .left_float {
+  float: left;
+}
+
+footer .right_float {
+  float: right;
+}
+
+footer .right_float a {
+  padding: 10px;
+}
+
+footer h4 {
+  margin-right: 0;
+  max-width: 30%;
+}
+
+th {
+  text-align: left;
+}
+
+
+/* MC Things */
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+}
+
+.sponsors {
+  text-align: justify;
+}
+
+.sponsors img {
+  max-width: 24%;
+  vertical-align: middle;
+  margin: auto;
+  display: inline-block;
+  padding-top: 20px;
+}
+
 
 /*Media Query*/
 
 @media screen and (min-width: 700px) {
-  .welcomingNotes_Container {
+  .largeLeft_Container {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
   }
-  .recentNews_Container {
+  .smallRight_Container {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: 0%;
     max-width: 400px;
   }
-  .schedule_Container {
+  .smallRight_Container {
     float: right;
     width: 50%;
     margin-left: 0%;
@@ -210,15 +280,21 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+  .largeLeft_Container {
+    padding-left: 20%;
+  }
   .mainContainer {
     width: 90%;
     margin: auto;
+  }
+  main {
+    width: 60%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .mainContainer {
-    width: 100%;
+    width: 80%;
     margin: auto;
   }
   * {
@@ -239,16 +315,16 @@ footer {
     margin: 0;
     clear: none;
   }
-  .welcomingNotes_Container {
-    width: 100%;
+  .largeLeft_Container {
+    width: 90%;
     margin-left: 0%;
     margin-right: 0%;
-    padding-left: 50px;
+    padding-left: 20%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
   }
-  .recentNews_Container {
+  .smallRight_Container {
     float: none;
     width: 100%;
     margin-left: 0%;
@@ -259,7 +335,7 @@ footer {
     padding-right: 10px;
     max-width: none;
   }
-  .schedule_Container {
+  .smallRight_Container {
     float: none;
     width: 100%;
     margin-left: 0%;
@@ -269,6 +345,14 @@ footer {
     padding-bottom: 10px;
     padding-right: 10px;
     max-width: none;
+  }
+  .timetable {
+    margin: 0;
+    max-width: 350px;
+  }
+  .socialMedia_Container {
+    max-width: 350px;
+    margin: 0;
   }
 }
 
@@ -278,8 +362,5 @@ footer {
     margin: auto;
   }
 }
-
-
-/*Needs another Media Query, Some weird Scaling issues going on at small screen widths*/
 
 .nav @import 'lib/nav.css';
