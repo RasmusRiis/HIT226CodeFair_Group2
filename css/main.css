@@ -88,8 +88,10 @@ header {
   background-color: lightgray;
   padding: 20px;
   clear: none;
-  background-image: url("images/bannerPicture2.jpg");
-  background-size: contain;
+  background-image: url(../images/bannerPicture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 
 #countdown {
@@ -98,7 +100,8 @@ header {
   text-align: center;
   vertical-align: middle;
   padding-top: 180px;
-  text-shadow: -webkit-font-smoothing: antialiased #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px, #FAFAFA 0px 0px 3px;
+  text-shadow: #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px;
+  color: white;
 }
 
 
@@ -122,6 +125,12 @@ header {
   margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.largeLeft_Container img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 

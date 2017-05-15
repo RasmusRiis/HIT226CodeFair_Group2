@@ -4,21 +4,17 @@
 
 
 (function(){
-  var bicBox = document.querySelector("#bIC");
-  var ppcBox = document.querySelector("#pPC");
-  var swcBox = document.querySelector("#sWC");
-  var esdBox = document.querySelector("#eSD");
-  var bicDl = document.querySelector("#bICdl");
-  var ppcDl = document.querySelector("#pPCdl");
-  var swcDl = document.querySelector("#sWCdl");
-  var esdDl = document.querySelector("#eSDdl");
+  var bicBox = document.querySelector("#BIC");
+  var ppcBox = document.querySelector("#PPC");
+  var swcBox = document.querySelector("#SWC");
+  var esdBox = document.querySelector("#ESD");
+  var bicDl = document.querySelector("#BICdl");
+  var ppcDl = document.querySelector("#PPCdl");
+  var swcDl = document.querySelector("#SWCdl");
+  var esdDl = document.querySelector("#ESDdl");
 var getFormsBtn = document.querySelector("#getFormsBtn");
 
-bicDl.style.display = 'none';
-ppcDl.style.display = 'none';
-swcDl.style.display = 'none';
-esdDl.style.display = 'none';
-
+bicDl.style.display = "hide";
 attachEvents();
 /*
 if(Modernizr.eventlistener){ //check if addEventListener is supported
@@ -34,23 +30,10 @@ function attachEvents(){
   getFormsBtn.addEventListener('click', getForms);
 }
 
-function getForms(){
-  bicDl.style.display = 'none';
-  ppcDl.style.display = 'none';
-  swcDl.style.display = 'none';
-  esdDl.style.display = 'none';
-  
-  if(bicBox.checked){
-    bicDl.style.display = 'block';
-  }
-  if(ppcBox.checked){
-    ppcDl.style.display = 'block';
-  }
-  if(swcBox.checked){
-    swcDl.style.display = 'block';
-  }
-  if(esdBox.checked){
-    esdDl.style.display = 'block';
-  }
+function signUp(){
+
+
+
+
 }
 })();
