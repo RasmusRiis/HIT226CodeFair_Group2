@@ -36,6 +36,19 @@ header nav li a:hover {
 header nav li .active{
   text-decoration: underline;
 }
+header nav .hoverCard{
+  margin-top: 40px;
+  padding: 20px 20px 20px 20px;
+  max-width: 250px;
+  font-style: bold;
+  font-size: large;
+  color: #fefefe;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #3b669b;
+  box-shadow: 2px 2px 4px #000000;
+  display: none;
+}
 
 @media screen and (min-width: 950px) {
   header nav li {
