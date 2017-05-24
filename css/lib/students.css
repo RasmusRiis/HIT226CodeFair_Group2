@@ -1,4 +1,4 @@
-body a{
+main a{
   text-decoration: none;
 }
 
@@ -17,7 +17,7 @@ body a{
   color: #fefefe;
   margin: 0;
 }
-p:first-child{
+main p:first-child{
   color: #fefefe;
   text-decoration-color: #fefefe;
   font-size: large;
