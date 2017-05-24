@@ -263,11 +263,11 @@ main a{
 
 .signUpBtn{
   border-style: none;
-  background-color: #3b669b;
+  background-color: #3b669b !important;
   max-width: 300px;
   margin: 0;
   text-align: center;
-  font-size: large;
+  font-size: large !important;
   border-radius: 4px;
   box-shadow: 2px 2px 4px #000000;
   color: #fefefe;
