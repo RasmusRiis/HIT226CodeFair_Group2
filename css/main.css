@@ -256,6 +256,39 @@ th {
   padding-top: 20px;
 }
 
+/*Buttons*/
+main a{
+  text-decoration: none;
+}
+
+.signUpBtn{
+  border-style: none;
+  background-color: #3b669b;
+  max-width: 300px;
+  margin: 0;
+  text-align: center;
+  font-size: large;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #000000;
+  color: #fefefe;
+}
+
+.signUpBtn p{
+  color: #fefefe;
+  margin: 0;
+}
+main p:first-child{
+  color: #fefefe;
+  text-decoration-color: #fefefe;
+  font-size: large;
+}
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+}
+
+
 
 /*Media Query*/
 
