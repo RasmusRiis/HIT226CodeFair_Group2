@@ -1,0 +1,408 @@
+/*-------------------
+Style Sheet for {Group 2 Code Fair}
+
+author: Group 2
+website: {Code Fair}
+Group 2: Dyllan, Joel, Rasmus
+---------------------*/
+
+@import 'vendor/normalize.css';
+@import 'vendor/browserupgrade.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'lib/nav.css';
+
+/* Site Settings*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+
+/* Font Settings */
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+small,
+.font_small {
+  font-size: 0.707em;
+}
+
+
+/* Header */
+
+header {
+  float: left;
+  width: 100%;
+  background-color: lightgray;
+}
+
+#logoContainer {}
+
+#logo {
+  padding: 10px;
+  width: 50%;
+  max-width: 500px;
+  min-height: 50px;
+}
+
+
+/* Slideshow */
+
+.slideshow_Container {
+  float: left;
+  width: 100%;
+  max-height: 450px;
+  background-color: lightgray;
+  padding: 20px;
+  clear: none;
+  background-image: url(../images/bannerPicture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+#countdown {
+  font-weight: bolder;
+  font-size: 2.618em;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 180px;
+  text-shadow: #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px, #333333 0px 0px 3px;
+  color: white;
+}
+
+
+/* Main */
+
+.mainContainer {
+  width: 100%;
+  min-height: 1200px;
+  background-color: #fefefe;
+}
+
+.largeLeft_Container {
+  float: left;
+  max-width: none;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  clear: none;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.largeLeft_Container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Aside */
+
+aside {
+  float: right;
+  /*width: 480px;*/
+  width: 100%;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: lightgray;
+}
+
+.smallRight_Container {
+  float: right;
+  width: 100%;
+  clear: none;
+  max-width: none;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.timetable {
+  margin: auto;
+  max-width: 350px;
+}
+
+.smallRight_Container article {
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.socialMedia_Container {
+  max-width: 350px;
+  margin: auto;
+}
+
+.socialMedia_Container img {
+  max-width: 130px;
+}
+
+#CDU {
+  max-width: 260px;
+}
+
+
+/*.schedule_Container {
+  max-width: none;
+  float: right;
+  width: 100%;
+  clear: none;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.schedule_Container div {
+  padding: 5px;
+  margin-top: 15px;
+}
+*/
+
+
+/* Footer */
+
+footer {
+  float: left;
+  width: 100%;
+  height: auto;
+  clear: both;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+#footer h3 {
+  margin: .5em 0 0em;
+  font-weight: inherit;
+  line-height: 1;
+}
+
+footer .left_float {
+  float: left;
+}
+
+footer .right_float {
+  float: right;
+}
+
+footer .right_float a {
+  padding: 10px;
+}
+
+footer h4 {
+  margin-right: 0;
+  max-width: 30%;
+}
+
+th {
+  text-align: left;
+}
+
+
+/* MC Things */
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+}
+
+.sponsors {
+  text-align: justify;
+}
+
+.sponsors img {
+  max-width: 24%;
+  vertical-align: middle;
+  margin: auto;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+/*Buttons*/
+main a{
+  text-decoration: none;
+}
+
+.signUpBtn{
+  border-style: none;
+  background-color: #3b669b !important;
+  max-width: 300px;
+  margin: 0;
+  text-align: center;
+  font-size: large !important;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #000000;
+  color: #fefefe;
+}
+
+.signUpBtn p{
+  color: #fefefe;
+  margin: 0;
+}
+main p:first-child{
+  color: #fefefe;
+  text-decoration-color: #fefefe;
+  font-size: large;
+}
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+}
+
+
+
+/*Media Query*/
+
+@media screen and (min-width: 700px) {
+  .largeLeft_Container {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .smallRight_Container {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 400px;
+  }
+  .smallRight_Container {
+    float: right;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 400px;
+  }
+  aside {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    float: none;
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .largeLeft_Container {
+    padding-left: 20%;
+  }
+  .mainContainer {
+    width: 90%;
+    margin: auto;
+  }
+  main {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainContainer {
+    width: 80%;
+    margin: auto;
+  }
+  * {
+    font-size: 16px;
+  }
+  body {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main {
+    width: 70%;
+  }
+  aside {
+    float: right;
+    width: 30%;
+    max-width: none;
+    margin: 0;
+    clear: none;
+  }
+  .largeLeft_Container {
+    width: 90%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  .smallRight_Container {
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    max-width: none;
+  }
+  .smallRight_Container {
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    max-width: none;
+  }
+  .timetable {
+    margin: 0;
+    max-width: 350px;
+  }
+  .socialMedia_Container {
+    max-width: 350px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .mainContainer {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.nav @import 'lib/nav.css';
